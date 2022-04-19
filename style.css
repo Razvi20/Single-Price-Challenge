@@ -1,0 +1,134 @@
+/* 
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%) */
+
+.html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla";
+}
+
+.container {
+  max-width: 50rem;
+  margin: 15rem auto;
+}
+
+.pricing-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.info-pricing {
+  grid-column: 1/-1;
+  background-color: #fff;
+  padding: 1.8rem 2.4rem;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.card-header {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 1.4rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.card-subheader {
+  font-size: 1.2rem;
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.card-text {
+  color: hsl(218, 22%, 67%);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.chose-us {
+  background-color: hsl(179, 62%, 43%);
+  padding: 1.8rem 2.4rem;
+  border-bottom-right-radius: 9px;
+  color: #fff;
+}
+
+.chose-us-header {
+  margin-bottom: 1.4rem;
+  font-weight: 700;
+}
+
+.chose-us-text {
+  line-height: 1.6;
+}
+
+.subscription {
+  background-color: hsl(179, 62%, 41%);
+  padding: 1.8rem 2.4rem;
+  border-bottom-left-radius: 9px;
+}
+
+.subscription-header {
+  color: #fff;
+  margin-bottom: 1.4rem;
+}
+
+.money-subscription {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subscription-price {
+  color: hsl(204, 43%, 73%);
+  margin-bottom: 0.8rem;
+}
+
+.subscription-info {
+  color: #fff;
+  margin-bottom: 1.6rem;
+}
+
+.subscription-btn {
+  width: 100%;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 7px;
+  background-color: hsl(71, 73%, 54%);
+  padding: 1rem 5.4rem;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.07);
+}
+
+@media (max-width: 50em) {
+  .pricing-card {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    margin: 10% 10%;
+  }
+
+  .subscription {
+    border-bottom-left-radius: 0;
+  }
+
+  .chose-us {
+    border-bottom-left-radius: 9px;
+  }
+}
